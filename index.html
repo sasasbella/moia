@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Ruan Moia</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #d63384;
+    }
+
+    .btn {
+      margin: 20px;
+      padding: 15px 30px;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-sim {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .btn-sim:hover {
+      background-color: #218838;
+    }
+
+    .btn-nao {
+      background-color: #dc3545;
+      color: white;
+    }
+
+    .btn-nao:hover {
+      background-color: #c82333;
+    }
+
+    .coracoes {
+      margin-top: 50px;
+      font-size: 2rem;
+      color: #ff69b4;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Ruan Moia</h1>
+
+  <button class="btn btn-sim" onclick="window.location.href='https://www.google.com'">Sim</button>
+  <button class="btn btn-nao" onclick="mostrarCoracoes()">Não</button>
+
+  <div class="coracoes" id="coracoes">
+    ❤️ 💖 💕 💘 💓 💞 💗 💝 💟
+  </div>
+
+  <script>
+    function mostrarCoracoes() {
+      document.getElementById("coracoes").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
